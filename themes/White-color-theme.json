@@ -68,6 +68,7 @@
 		"sideBarTitle.foreground": "#bec9d3",
 		"statusBar.background": "#000",
 		"statusBar.foreground": "#65696e",
+		"statusBar.noFolderBackground": "#000",
 		"tab.activeBackground": "#000",
 		"tab.activeForeground": "#fff",
 		"tab.border": "#0000",
@@ -94,6 +95,8 @@
 		"titleBar.activeForeground": "#6b7a88",
 		"titleBar.inactiveBackground": "#fff",
 		"titleBar.inactiveForeground": "#bec9d3",
+		"welcomePage.buttonBackground": "#f4f6fc",
+		"welcomePage.buttonHoverBackground": "#007aff26",
 		"widget.shadow": "#0000"
 	},
 	"tokenColors": [
