@@ -31,6 +31,9 @@
 		"editorOverviewRuler.border": "#0000",
 		"editorOverviewRuler.modifiedForeground": "#f90",
 		"editorRuler.foreground": "#f4f6fc",
+		"editorSuggestWidget.foreground": "#000",
+		"editorWidget.background": "#f4f6fc",
+		"editorWidget.border": "#e9e9f3",
 		"extensionButton.prominentBackground": "#004bff",
 		"extensionButton.prominentForeground": "#fff",
 		"extensionButton.prominentHoverBackground": "#004bff",
@@ -42,10 +45,12 @@
 		"input.background": "#f4f6fc",
 		"input.border": "#e9e9f3",
 		"input.foreground": "#000",
-		"input.placeholderForeground": "#c0c6cc",
+		"input.placeholderForeground": "#bec9d3",
 		"list.activeSelectionBackground": "#000",
 		"list.activeSelectionForeground": "#fff",
 		"list.dropBackground": "#0064ff4c",
+		"list.focusBackground": "#007aff26",
+		"list.focusForeground": "#000",
 		"list.highlightForeground": "#000",
 		"list.hoverBackground": "#f4f6fc",
 		"list.inactiveSelectionBackground": "#f4f6fc",
@@ -89,7 +94,7 @@
 		"titleBar.activeForeground": "#6b7a88",
 		"titleBar.inactiveBackground": "#fff",
 		"titleBar.inactiveForeground": "#bec9d3",
-		"widget.shadow": "#c3cbe04d"
+		"widget.shadow": "#0000"
 	},
 	"tokenColors": [
 		{
