@@ -1,0 +1,3 @@
+# White
+
+Pure white theme

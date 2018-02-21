@@ -1,0 +1,150 @@
+{
+	"colors": {
+		"activityBar.background": "#fff",
+		"activityBar.border": "#0000",
+		"activityBar.foreground": "#bec9d3",
+		"activityBarBadge.background": "#000",
+		"activityBarBadge.foreground": "#fff",
+		"contrastBorder": "#0000",
+		"dropdown.background": "#f4f6fc",
+		"dropdown.border": "#e9e9f3",
+		"dropdown.foreground": "#000",
+		"editor.background": "#fff",
+		"editor.foreground": "#000",
+		"editor.lineHighlightBackground": "#007aff0c",
+		"editor.lineHighlightBorder": "#0000",
+		"editor.selectionBackground": "#0064ff4c",
+		"editor.selectionForeground": "#fff",
+		"editorBracketMatch.background": "#0064ff4c",
+		"editorBracketMatch.border": "#0000",
+		"editorCursor.foreground": "#004bff",
+		"editorError.foreground": "#f30",
+		"editorGroup.border": "#f4f6fc",
+		"editorGroupHeader.tabsBackground": "#fff",
+		"editorGroupHeader.tabsBorder": "#0000",
+		"editorGutter.addedBackground": "#4cd964",
+		"editorGutter.deletedBackground": "#f30",
+		"editorGutter.modifiedBackground": "#f90",
+		"editorLineNumber.foreground": "#ebf0f5",
+		"editorLink.activeForeground": "#004bff",
+		"editorOverviewRuler.border": "#0000",
+		"editorRuler.foreground": "#f4f6fc",
+		"extensionButton.prominentBackground": "#000",
+		"extensionButton.prominentForeground": "#fff",
+		"extensionButton.prominentHoverBackground": "#004bff",
+		"focusBorder": "#e9e9f3",
+		"foreground": "#000",
+		"gitDecoration.ignoredResourceForeground": "#bec9d3",
+		"gitDecoration.modifiedResourceForeground": "#f90",
+		"gitDecoration.untrackedResourceForeground": "#000",
+		"input.background": "#f4f6fc",
+		"input.border": "#e9e9f3",
+		"input.foreground": "#000",
+		"input.placeholderForeground": "#c0c6cc",
+		"list.activeSelectionBackground": "#000",
+		"list.activeSelectionForeground": "#fff",
+		"list.dropBackground": "#0064ff4c",
+		"list.highlightForeground": "#000",
+		"list.hoverBackground": "#f4f6fc",
+		"list.inactiveSelectionBackground": "#f4f6fc",
+		"list.inactiveSelectionForeground": "#000",
+		"panel.background": "#f4f6fc",
+		"panel.border": "#0000",
+		"panelTitle.activeBorder": "#bec9d3",
+		"scrollbar.shadow": "#0000",
+		"scrollbarSlider.background": "#99a7e119",
+		"scrollbarSlider.hoverBackground": "#000",
+		"sideBar.background": "#fff",
+		"sideBar.foreground": "#6b7a88",
+		"sideBarSectionHeader.background": "#f4f6fc",
+		"sideBarSectionHeader.foreground": "#6b7a88",
+		"sideBarTitle.foreground": "#bec9d3",
+		"statusBar.background": "#000",
+		"statusBar.foreground": "#65696e",
+		"tab.activeBackground": "#000",
+		"tab.activeForeground": "#fff",
+		"tab.border": "#0000",
+		"tab.inactiveBackground": "#0000",
+		"tab.inactiveForeground": "#bec9d3",
+		"terminal.ansiBlack": "#000",
+		"terminal.ansiBlue": "#004bff",
+		"terminal.ansiBrightBlack": "#000",
+		"terminal.ansiBrightBlue": "#004bff",
+		"terminal.ansiBrightGreen": "#4cd964",
+		"terminal.ansiBrightMagenta": "#5a3fb5",
+		"terminal.ansiBrightRed": "#f30",
+		"terminal.ansiBrightYellow": "#f90",
+		"terminal.ansiGreen": "#4cd964",
+		"terminal.ansiMagenta": "#5a3fb5",
+		"terminal.ansiRed": "#f30",
+		"terminal.ansiYellow": "#f90",
+		"terminal.foreground": "#000",
+		"terminal.selectionBackground": "#0064ff4c",
+		"terminalCursor.foreground": "#004bff",
+		"textLink.activeForeground": "#004bff",
+		"textLink.foreground": "#004bff",
+		"titleBar.activeBackground": "#fff",
+		"titleBar.activeForeground": "#6b7a88",
+		"titleBar.inactiveBackground": "#fff",
+		"titleBar.inactiveForeground": "#bec9d3",
+		"widget.shadow": "#0000"
+	},
+	"tokenColors": [
+		{
+			"scope": [
+				"comment",
+				"string.quoted.docstring"
+			],
+			"settings": {
+				"foreground": "#bec9d3"
+			}
+		},
+		{
+			"scope": [
+				"string"
+			],
+			"settings": {
+				"foreground": "#6b7a88"
+			}
+		},
+		{
+			"scope": [
+				"punctuation.definition.string",
+				"storage.type.string.python"
+			],
+			"settings": {
+				"foreground": "#000"
+			}
+		},
+		{
+			"scope": [
+				"beginning.punctuation",
+				"keyword.const",
+				"keyword.control",
+				"keyword.function",
+				"keyword.import",
+				"keyword.operator.assignment",
+				"keyword.operator.comparison",
+				"keyword.operator.decrement",
+				"keyword.operator.expression",
+				"keyword.operator.increment",
+				"keyword.operator.logical",
+				"keyword.operator.new",
+				"keyword.package",
+				"keyword.type",
+				"keyword.var",
+				"markup.heading",
+				"meta.function.decorator",
+				"storage.modifier",
+				"storage.type.class",
+				"storage.type.function",
+				"storage.type.js",
+				"storage.type.property",
+				"storage.type.string.python"
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		}
+	]
+}
