@@ -25,11 +25,13 @@
 		"editorGutter.addedBackground": "#4cd964",
 		"editorGutter.deletedBackground": "#f30",
 		"editorGutter.modifiedBackground": "#f90",
+		"editorIndentGuide.background": "#f4f6fc",
 		"editorLineNumber.foreground": "#ebf0f5",
 		"editorLink.activeForeground": "#004bff",
 		"editorOverviewRuler.border": "#0000",
+		"editorOverviewRuler.modifiedForeground": "#f90",
 		"editorRuler.foreground": "#f4f6fc",
-		"extensionButton.prominentBackground": "#000",
+		"extensionButton.prominentBackground": "#004bff",
 		"extensionButton.prominentForeground": "#fff",
 		"extensionButton.prominentHoverBackground": "#004bff",
 		"focusBorder": "#e9e9f3",
@@ -87,7 +89,7 @@
 		"titleBar.activeForeground": "#6b7a88",
 		"titleBar.inactiveBackground": "#fff",
 		"titleBar.inactiveForeground": "#bec9d3",
-		"widget.shadow": "#0000"
+		"widget.shadow": "#c3cbe04d"
 	},
 	"tokenColors": [
 		{
