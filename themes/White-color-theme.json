@@ -43,6 +43,8 @@
 		"editorOverviewRuler.findMatchForeground": "#ffbc0099",
 		"editorOverviewRuler.modifiedForeground": "#ff8e004c",
 		"editorOverviewRuler.selectionHighlightForeground": "#0064ff4c",
+		"editorOverviewRuler.wordHighlightForeground": "#007aff26",
+		"editorOverviewRuler.wordHighlightStrongForeground": "#0064ff4c",
 		"editorRuler.foreground": "#f4f6fc",
 		"editorSuggestWidget.foreground": "#000",
 		"editorWarning.foreground": "#ffbc00",
