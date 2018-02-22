@@ -5,6 +5,8 @@
 		"activityBar.foreground": "#2e2e37",
 		"activityBarBadge.background": "#fff",
 		"activityBarBadge.foreground": "#000",
+		"badge.background": "#fff",
+		"badge.foreground": "#000",
 		"button.background": "#5a3fb5",
 		"button.foreground": "#fff",
 		"contrastBorder": "#0000",
