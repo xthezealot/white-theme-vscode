@@ -1,15 +1,37 @@
 {
     "name": "white",
     "displayName": "White",
-    "description": "Minimalist monochromatic theme",
-    "version": "0.0.1-alpha.1",
+    "description": "Minimalist monochrome theme",
+    "keywords": [
+        "white",
+        "theme",
+        "night",
+        "minimal",
+        "monochrome"
+    ],
+    "version": "0.0.1",
     "publisher": "arthurwhite",
+    "author": {
+        "name": "Arthur White"
+    },
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.20.0"
     },
     "categories": [
         "Themes"
     ],
+    "galleryBanner": {
+        "color": "#000",
+        "theme": "dark"
+    },
+    "bugs": {
+        "url": "https://github.com/arthurwhite/white-theme-vscode/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arthurwhite/white-theme-vscode"
+    },
     "contributes": {
         "themes": [
             {

@@ -1,10 +1,9 @@
 # Change Log
 
-## Unreleased
+## 0.0.1 - 2018-02-22
 
 - Complete UI customization
-- More languages support
-- Publish on the Visual Studio Marketplace
+- Good support for all trending languages
 
 ## 0.0.1-alpha.1 - 2018-02-21
 
