@@ -43,6 +43,7 @@
 		"editorOverviewRuler.selectionHighlightForeground": "#7d46fc4c",
 		"editorRuler.foreground": "#0a0b0f",
 		"editorSuggestWidget.foreground": "#fff",
+		// "editorWarning.foreground": "#ffbc00",
 		"editorWidget.background": "#0a0b0f",
 		"editorWidget.border": "#1c2028",
 		"errorForeground": "#f30",
