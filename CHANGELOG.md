@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.4 - 2018-02-23
+
+- Improve integrated terminal colors
+
 ## 0.0.3 - 2018-02-23
 
 - Fix README typo

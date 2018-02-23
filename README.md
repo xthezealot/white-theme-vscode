@@ -12,7 +12,7 @@ Perfect when you know your editor and its shortcuts.
 ### Meaningful syntax
 
 All programming languages already have punctuation and style: we type characters, not rainbows.  
-After some weeks away from noisy and inconsistent colorization, you'll start to have a better global view of your projects and switching between languages will be natural.
+After some weeks away from noisy and inconsistent colorization, you'll start to have a better global view over your projects and switching between languages will be more natural.
 
 ### Knight & Day
 
