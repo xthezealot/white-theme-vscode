@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.3 - 2018-02-23
+
+- Fix README typo
+
 ## 0.0.2 - 2018-02-23
 
 - Improved colors

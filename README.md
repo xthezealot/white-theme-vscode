@@ -6,7 +6,7 @@ Minimalist monochrome theme for [Visual Studio Code](https://code.visualstudio.c
 
 ### Less UI, more code
 
-It lets you focus on the beauty of your code by fading all visual disractions around.  
+It lets you focus on the beauty of your code by fading all visual distractions around.  
 Perfect when you know your editor and its shortcuts.
 
 ### Meaningful syntax
