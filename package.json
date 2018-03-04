@@ -2,13 +2,7 @@
     "name": "white",
     "displayName": "White",
     "description": "Minimalist monochrome theme",
-    "keywords": [
-        "white",
-        "theme",
-        "night",
-        "minimal",
-        "monochrome"
-    ],
+    "keywords": ["white", "theme", "night", "minimal", "monochrome"],
     "version": "0.0.4",
     "publisher": "arthurwhite",
     "author": {
@@ -18,9 +12,7 @@
     "engines": {
         "vscode": "^1.20.0"
     },
-    "categories": [
-        "Themes"
-    ],
+    "categories": ["Themes"],
     "galleryBanner": {
         "color": "#000",
         "theme": "dark"
@@ -45,5 +37,10 @@
                 "path": "./themes/White-Night-color-theme.json"
             }
         ]
+    },
+    "prettier": {
+        "arrowParens": "always",
+        "tabWidth": 4,
+        "trailingComma": "all"
     }
 }
