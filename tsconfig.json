@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "lib": ["dom", "esnext"],
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "outDir": "dist",
+        "pretty": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "es5"
+    }
+}
