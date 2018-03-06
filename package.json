@@ -2,8 +2,14 @@
     "name": "white",
     "displayName": "White",
     "description": "Minimalist monochrome theme",
-    "keywords": ["white", "theme", "night", "minimal", "monochrome"],
-    "version": "0.0.4",
+    "keywords": [
+        "white",
+        "theme",
+        "night",
+        "minimal",
+        "monochrome"
+    ],
+    "version": "1.0.0",
     "publisher": "arthurwhite",
     "author": {
         "name": "Arthur White"
@@ -12,7 +18,9 @@
     "engines": {
         "vscode": "^1.20.0"
     },
-    "categories": ["Themes"],
+    "categories": [
+        "Themes"
+    ],
     "galleryBanner": {
         "color": "#000",
         "theme": "dark"
