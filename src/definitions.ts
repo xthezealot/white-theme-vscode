@@ -227,6 +227,7 @@ export default {
                 "storage.type.import",
                 "storage.type.interface",
                 "storage.type.js",
+                "storage.type.namespace",
                 "storage.type.property",
                 "storage.type.string.python",
                 "storage.type.ts",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 - 2018-03-08
+
+*   Add scope `storage.type.namespace`
+
 ## 0.1.0 - 2018-03-06
 
 *   Improved colors and languages support
