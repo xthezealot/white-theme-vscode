@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 - 2018-03-12
+
+*   Style peek view file and line foregrounds
+
 ## 1.1.0 - 2018-03-12
 
 *   Style peek view

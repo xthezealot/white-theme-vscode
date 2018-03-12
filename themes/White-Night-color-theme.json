@@ -82,6 +82,8 @@
         "peekViewEditor.background": "#00000000",
         "peekViewEditor.matchHighlightBackground": "#ffca0099",
         "peekViewResult.background": "#00000000",
+        "peekViewResult.fileForeground": "#a8a8b1ff",
+        "peekViewResult.lineForeground": "#a8a8b1ff",
         "peekViewResult.matchHighlightBackground": "#ffca0099",
         "peekViewResult.selectionBackground": "#ffffffff",
         "peekViewResult.selectionForeground": "#000000ff",

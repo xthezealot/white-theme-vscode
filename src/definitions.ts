@@ -128,6 +128,8 @@ export default {
         "peekViewEditor.background": none,
         "peekViewEditor.matchHighlightBackground": find,
         "peekViewResult.background": none,
+        "peekViewResult.fileForeground": greyStrong,
+        "peekViewResult.lineForeground": greyStrong,
         "peekViewResult.matchHighlightBackground": find,
         "peekViewResult.selectionBackground": mainNegative,
         "peekViewResult.selectionForeground": main,
