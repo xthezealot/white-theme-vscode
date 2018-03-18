@@ -1,4 +1,1 @@
-**/*.ts
-**/tsconfig.json
-**/tslint.json
-src/
+**/*.py

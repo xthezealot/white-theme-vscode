@@ -47,22 +47,6 @@
         ]
     },
     "scripts": {
-        "build": "ts-node src/build.ts"
-    },
-    "devDependencies": {
-        "@types/fs-extra": "^5.0.1",
-        "@types/lodash": "^4.14.104",
-        "@types/node": "^9.4.6",
-        "@types/tinycolor2": "^1.4.0",
-        "fs-extra": "^5.0.0",
-        "lodash": "^4.17.5",
-        "tinycolor2": "^1.4.1",
-        "ts-node": "^5.0.1",
-        "typescript": "^2.7.2"
-    },
-    "prettier": {
-        "arrowParens": "always",
-        "tabWidth": 4,
-        "trailingComma": "all"
+        "build": "./build.py"
     }
 }
