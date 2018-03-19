@@ -3,6 +3,8 @@
 from build import ColorSplit
 
 
+# Colors
+
 colorNone = ColorSplit('#000000').set_alpha(0)
 colorWhite = ColorSplit('#ffffff')
 colorBlack = ColorSplit('#000000')
@@ -44,7 +46,8 @@ colorFindHighlight = colorFind.with_alpha(0.3)
 
 colorBorder = colorGreyLight
 
-# Theme settings
+
+# Theme definitions
 
 definitions = {
     'colors': {
