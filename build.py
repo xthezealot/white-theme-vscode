@@ -85,18 +85,18 @@ class ColorSplit(object):
         return color_split
 
 
-def forge(dd, night=False):
+def forge(defs, night=False):
     """Replace color splits with plain strings."""
-    for d in dd:
-        if isinstance(dd[d], dict):
-            forge(dd[d], night)
-        elif isinstance(dd[d], list):
-            for i, v in enumerate(dd[d]):
+    for d in defs:
+        if isinstance(defs[d], dict):
+            forge(defs[d], night)
+        elif isinstance(defs[d], list):
+            for i, v in enumerate(defs[d]):
                 if isinstance(v, dict):
-                    forge(dd[d][i], night)
-        elif isinstance(dd[d], definitions.ColorSplit):
-            dd[d] = str(dd[d].white) if not night else str(
-                dd[d].white_night)
+                    forge(defs[d][i], night)
+        elif isinstance(defs[d], definitions.ColorSplit):
+            defs[d] = str(defs[d].white) if not night else str(
+                defs[d].white_night)
 
 
 def dump(night=False):
