@@ -242,7 +242,6 @@ definitions = {
                 'keyword.type',
                 'keyword.var',
                 'markup.heading',
-                'meta.function.decorator',
                 'meta.tag.sgml.doctype.html',
                 'punctuation.separator.key-value',
                 'storage.modifier',
