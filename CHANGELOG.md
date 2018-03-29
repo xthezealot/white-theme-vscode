@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2 - 2018-03-19
+
+- Use real white for terminal white color
+
 ## 1.2.1 - 2018-03-19
 
 - Remove bold style of `meta.function.decorator`
