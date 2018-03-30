@@ -23,6 +23,7 @@
         "editor.lineHighlightBorder": "#0000",
         "editor.selectionBackground": "#7d46fc7f",
         "editor.selectionForeground": "#000",
+        "editor.selectionHighlightBorder": "#7d46fc3f",
         "editor.wordHighlightBackground": "#7d46fc3f",
         "editor.wordHighlightStrongBackground": "#7d46fc7f",
         "editorBracketMatch.background": "#7d46fc7f",

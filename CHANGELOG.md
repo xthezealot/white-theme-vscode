@@ -1,6 +1,10 @@
 # Changelog
 
-## 1.2.2 - 2018-03-19
+## 1.2.3 - 2018-03-30
+
+- Add `editor.selectionHighlightBorder`
+
+## 1.2.2 - 2018-03-29
 
 - Use real white for terminal white color
 

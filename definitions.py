@@ -74,6 +74,8 @@ definitions = {
         'editor.lineHighlightBorder': colorNone,
         'editor.selectionBackground': colorPrimaryHighlightStrong,
         'editor.selectionForeground': colorMain,
+        "editor.selectionHighlightBorder":
+            ColorSplit(colorNone, colorPrimaryHighlight),
         'editor.wordHighlightBackground': colorPrimaryHighlight,
         'editor.wordHighlightStrongBackground': colorPrimaryHighlightStrong,
         'editorBracketMatch.background': colorPrimaryHighlightStrong,
