@@ -89,6 +89,7 @@ definitions = {
         'editorGutter.deletedBackground': colorDeleted,
         'editorGutter.modifiedBackground': colorMainNegative,
         'editorIndentGuide.background': colorMainContrast,
+        'editorLineNumber.activeForeground': colorGrey,
         'editorLineNumber.foreground': ColorSplit('#ebf0f5', colorGreyLight),
         'editorLink.activeForeground': colorPrimary,
         'editorOverviewRuler.addedForeground': colorNone,

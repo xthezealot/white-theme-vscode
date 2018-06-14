@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.4 - 2018-06-14
+
+- Add `editorLineNumber.activeForeground`
+
 ## 1.2.3 - 2018-03-30
 
 - Add `editor.selectionHighlightBorder`
