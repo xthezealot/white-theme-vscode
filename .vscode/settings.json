@@ -1,0 +1,11 @@
+{
+    "autoDocstring.docstringFormat": "google",
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "python.formatting.provider": "yapf",
+    "python.linting.mypyEnabled": true,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pep8Args": ["--ignore=E251,E701"],
+    "python.pythonPath": "venv/bin/python",
+    "python.venvFolders": ["venv"]
+}

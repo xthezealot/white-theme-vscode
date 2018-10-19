@@ -1,92 +1,142 @@
 #!/usr/bin/env python3
 """Generate White and White Night themes."""
 
-import copy
+from __future__ import annotations
+from copy import deepcopy
+from typing import Any, Dict, Union, Type
 import definitions
 import json
 
 
 class Color(object):
-    """Color defines a color."""
+    """Color defines a color.
 
-    def __init__(self, hex6, alpha=1):
-        """Make a Color.
+    Args:
+        hex6 (str): The 6 digits hexadecimal representation.
+        alpha (float, optional): The alpha value between 0 and 1. Defaults to
+            1.
 
-        :param hex6: the 6 digits hexadecimal representation
-        :param alpha: the alpha value between 0 and 1
-        """
-        if hex6.startswith('#'):
+    Raises:
+        ValueError: The representation is not a 6 digits hexadecimal number.
+    """
+
+    def __init__(self, hex6: str, alpha: float = 1):
+        if hex6.startswith("#"):
             hex6 = hex6[1:]
         if len(hex6) != 6:
-            raise ValueError('Hexadecimal value must have 6 chars')
+            raise ValueError("Hexadecimal value must have 6 chars")
         hex6 = hex6.lower()
 
         self._rgb = int(hex6, 16)
         self.alpha = alpha
 
     @property
-    def alpha(self):
-        """Get the alpha of the color, always between 0 and 1."""
+    def alpha(self) -> float:
+        """Get the alpha of the color, always between 0 and 1.
+
+        Returns:
+            float: The alpha value.
+        """
         return self._alpha
 
     @alpha.setter
-    def alpha(self, v):
+    def alpha(self, v: float):
+        """Get the alpha of the color.
+
+        Args:
+            v (float): The alpha value.
+
+        Raises:
+            ValueError: The value is not between 0 and 1.
+        """
         if not 0 <= v <= 1:
-            raise ValueError('Alpha must be between 0 and 1')
+            raise ValueError("Alpha must be between 0 and 1")
         self._alpha = v
 
-    def __str__(self):
-        """Get the shortest hexadecimal color value."""
-        s = '{:06x}'.format(self._rgb)
+    def __str__(self) -> str:
+        """Get the shortest hexadecimal color value.
+
+        Returns:
+            str: The hexadecimal representation.
+        """
+        s = "{:06x}".format(self._rgb)
         if self.alpha < 1:
-            s += '{:02x}'.format(int(self.alpha*255))
+            s += "{:02x}".format(int(self.alpha * 255))
         if s[0] == s[1] and s[2] == s[3] and s[4] == s[5]:
             if len(s) == 6:
                 s = s[0] + s[2] + s[4]
             elif s[6] == s[7]:
                 s = s[0] + s[2] + s[4] + s[6]
-        return '#'+s
+        return "#" + s
 
 
 class ColorSplit(object):
-    """Contains colors for White and White Night themes."""
+    """Contains colors for White and White Night themes.
 
-    def __init__(self, white, white_night=None):
-        """Make a color split for White and White Night themes."""
+    Args:
+        white (Union[str, ColorSplit]): The White theme color from an
+            hexadecimal representation or another color split.
+        white_night (Union[str, ColorSplit], optional): The White Night theme
+            color from an hexadecimal representation or another color split. If
+            None, the White version is used. Defaults to None.
+    """
+
+    def __init__(self,
+                 white: Union[str, ColorSplit],
+                 white_night: Union[str, ColorSplit] = None):
         if isinstance(white, ColorSplit):
-            self.white = copy.deepcopy(white.white)
+            self.white: Color = deepcopy(white.white)
         else:
             self.white = Color(white)
 
         if white_night:
             if isinstance(white_night, ColorSplit):
-                self.white_night = copy.deepcopy(white_night.white_night)
+                self.white_night: Color = deepcopy(white_night.white_night)
             else:
                 self.white_night = Color(white_night)
         else:
-            self.white_night = copy.deepcopy(self.white)
+            self.white_night = deepcopy(self.white)
 
-    def set_alpha(self, white, white_night=None):
+    def set_alpha(self, white: float, white_night: float = None) -> ColorSplit:
         """Set alpha values of colors.
 
-        :rtype: ColorSplit
+        Args:
+            white (float): The alpha value for the White theme.
+            white_night (float, optional): The alpha value for the White Night
+                theme. If None, the White version is used. Defaults to None.
+
+        Returns:
+            ColorSplit: The same color split.
         """
         self.white.alpha = white
         self.white_night.alpha = white_night if white_night else white
         return self
 
-    def with_alpha(self, white, white_night=None):
-        """Set alpha values of colors on a color split copy.
+    def with_alpha(self, white: float,
+                   white_night: float = None) -> ColorSplit:
+        """Copy colors split and set alpha values of colors.
 
-        :rtype: ColorSplit
+        Args:
+            white (float): The alpha value for the White theme.
+            white_night (float, optional): The alpha value for the White Night
+                theme. If None, the White version is used. Defaults to None.
+
+        Returns:
+            ColorSplit: A color split copy.
         """
-        color_split = copy.deepcopy(self)
+        color_split = deepcopy(self)
         color_split.set_alpha(white, white_night)
         return color_split
 
 
-def forge(defs, night=False):
-    """Replace color splits with plain strings."""
+def forge(defs: Dict[str, Any], night: bool = False):
+    """Replace color splits with plain strings.
+
+    Args:
+        defs (Dict[str, Any]): The definitions needed to be forged.
+        night (bool, optional): Wether forge for the normal theme or its night
+            version. Defaults to False.
+    """
     for d in defs:
         if isinstance(defs[d], dict):
             forge(defs[d], night)
@@ -99,19 +149,24 @@ def forge(defs, night=False):
                 defs[d].white_night)
 
 
-def dump(night=False):
-    """Write definitions to JSON files."""
-    filepath = 'themes/White'
+def dump(night: bool = False):
+    """Write definitions to JSON files.
+
+    Args:
+        night (bool, optional): Wether dump for the normal theme or its night
+            version. Defaults to False.
+    """
+    filepath = "themes/White"
     if night:
-        filepath += '-Night'
-    filepath += '-color-theme.json'
+        filepath += "-Night"
+    filepath += "-color-theme.json"
 
-    with open(filepath, 'w') as f:
-        dd = copy.deepcopy(definitions.definitions)
-        forge(dd, night)
-        json.dump(dd, f, indent=4)
+    with open(filepath, "w") as f:
+        defs = deepcopy(definitions.definitions)
+        forge(defs, night)
+        json.dump(defs, f, indent=4)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     dump()
     dump(True)
