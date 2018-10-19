@@ -5,7 +5,7 @@
     "python.formatting.provider": "yapf",
     "python.linting.mypyEnabled": true,
     "python.linting.pep8Enabled": true,
-    "python.linting.pep8Args": ["--ignore=E251,E701"],
+    "python.linting.pep8Path": "pycodestyle",
     "python.pythonPath": "venv/bin/python",
     "python.venvFolders": ["venv"]
 }
