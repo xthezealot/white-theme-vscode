@@ -13,8 +13,7 @@ class Color(object):
 
     Args:
         hex6 (str): The 6 digits hexadecimal representation.
-        alpha (float, optional): The alpha value between 0 and 1. Defaults to
-            1.
+        alpha (float, optional): The alpha value between 0 and 1. Defaults to 1.
 
     Raises:
         ValueError: The representation is not a 6 digits hexadecimal number.
@@ -74,16 +73,16 @@ class ColorSplit(object):
     """Contains colors for White and White Night themes.
 
     Args:
-        white (Union[str, ColorSplit]): The White theme color from an
-            hexadecimal representation or another color split.
-        white_night (Union[str, ColorSplit], optional): The White Night theme
-            color from an hexadecimal representation or another color split. If
-            None, the White version is used. Defaults to None.
+        white (Union[str, ColorSplit]): The White theme color from an hexadecimal
+            representation or another color split.
+        white_night (Union[str, ColorSplit], optional): The White Night theme color from
+            an hexadecimal representation or another color split. If None, the White
+            version is used. Defaults to None.
     """
 
-    def __init__(self,
-                 white: Union[str, ColorSplit],
-                 white_night: Union[str, ColorSplit] = None):
+    def __init__(
+        self, white: Union[str, ColorSplit], white_night: Union[str, ColorSplit] = None
+    ):
         if isinstance(white, ColorSplit):
             self.white: Color = deepcopy(white.white)
         else:
@@ -102,8 +101,8 @@ class ColorSplit(object):
 
         Args:
             white (float): The alpha value for the White theme.
-            white_night (float, optional): The alpha value for the White Night
-                theme. If None, the White version is used. Defaults to None.
+            white_night (float, optional): The alpha value for the White Night theme. If
+                None, the White version is used. Defaults to None.
 
         Returns:
             ColorSplit: The same color split.
@@ -112,14 +111,13 @@ class ColorSplit(object):
         self.white_night.alpha = white_night if white_night else white
         return self
 
-    def with_alpha(self, white: float,
-                   white_night: float = None) -> ColorSplit:
+    def with_alpha(self, white: float, white_night: float = None) -> ColorSplit:
         """Copy colors split and set alpha values of colors.
 
         Args:
             white (float): The alpha value for the White theme.
-            white_night (float, optional): The alpha value for the White Night
-                theme. If None, the White version is used. Defaults to None.
+            white_night (float, optional): The alpha value for the White Night theme. If
+                None, the White version is used. Defaults to None.
 
         Returns:
             ColorSplit: A color split copy.
@@ -134,8 +132,8 @@ def forge(defs: Dict[str, Any], night: bool = False):
 
     Args:
         defs (Dict[str, Any]): The definitions needed to be forged.
-        night (bool, optional): Wether forge for the normal theme or its night
-            version. Defaults to False.
+        night (bool, optional): Wether forge for the normal theme or its night version.
+            Defaults to False.
     """
     for d in defs:
         if isinstance(defs[d], dict):
@@ -145,16 +143,15 @@ def forge(defs: Dict[str, Any], night: bool = False):
                 if isinstance(v, dict):
                     forge(defs[d][i], night)
         elif isinstance(defs[d], definitions.ColorSplit):
-            defs[d] = str(defs[d].white) if not night else str(
-                defs[d].white_night)
+            defs[d] = str(defs[d].white) if not night else str(defs[d].white_night)
 
 
 def dump(night: bool = False):
     """Write definitions to JSON files.
 
     Args:
-        night (bool, optional): Wether dump for the normal theme or its night
-            version. Defaults to False.
+        night (bool, optional): Wether dump for the normal theme or its night version.
+            Defaults to False.
     """
     filepath = "themes/White"
     if night:
