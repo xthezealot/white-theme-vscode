@@ -1,6 +1,8 @@
 {
     "autoDocstring.docstringFormat": "google",
     "editor.formatOnSave": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
     "prettier.tabWidth": 4,
     "python.formatting.provider": "black",
     "python.linting.mypyEnabled": true,
