@@ -48,5 +48,10 @@
     },
     "scripts": {
         "build": "./build.py"
+    },
+    "prettier": {
+        "arrowParens": "always",
+        "tabWidth": 4,
+        "trailingComma": "all"
     }
 }

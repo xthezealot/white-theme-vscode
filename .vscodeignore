@@ -1,3 +1,6 @@
+__pycache__/**
 .gitignore
+.mypy_cache/**
 .vscode/**
 **/*.py
+venv/**

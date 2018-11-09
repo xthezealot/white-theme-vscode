@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1 - 2018-11-09
+
+-   Add Python directories to .vscodeignore
+
 ## 1.3.0 - 2018-11-05
 
 -   Add Rust support
