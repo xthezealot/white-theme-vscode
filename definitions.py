@@ -42,6 +42,9 @@ colorWarning = colorOrange
 colorFind = colorYellow.with_alpha(0.6)
 colorFindHighlight = colorFind.with_alpha(0.3)
 
+colorStackFocused = colorOrange.with_alpha(0.6)
+colorStack = colorOrange.with_alpha(0.3)
+
 colorBorder = colorGreyLight
 
 # Theme definitions
@@ -58,6 +61,7 @@ definitions = {
         "button.background": colorPrimary,
         "button.foreground": colorPrimaryNegative,
         "contrastBorder": colorNone,
+        "debugToolBar.background": colorMainContrast,
         "diffEditor.insertedTextBackground": colorAddedHighlight,
         "diffEditor.removedTextBackground": colorDeletedHighlight,
         "dropdown.background": colorMainContrast,
@@ -66,12 +70,14 @@ definitions = {
         "editor.background": colorMain,
         "editor.findMatchBackground": colorFind,
         "editor.findMatchHighlightBackground": colorFindHighlight,
+        "editor.focusedStackFrameHighlightBackground": colorStackFocused,
         "editor.foreground": colorMainNegative,
         "editor.lineHighlightBackground": colorPrimaryHighlightLight,
         "editor.lineHighlightBorder": colorNone,
         "editor.selectionBackground": colorPrimaryHighlightStrong,
         "editor.selectionForeground": colorMain,
         "editor.selectionHighlightBorder": ColorSplit(colorNone, colorPrimaryHighlight),
+        "editor.stackFrameHighlightBackground": colorStack,
         "editor.wordHighlightBackground": colorPrimaryHighlight,
         "editor.wordHighlightStrongBackground": colorPrimaryHighlightStrong,
         "editorBracketMatch.background": colorPrimaryHighlightStrong,
@@ -150,13 +156,17 @@ definitions = {
         "sideBarSectionHeader.foreground": colorGreyStrong,
         "sideBarTitle.foreground": colorGrey,
         "statusBar.background": colorBlack,
+        "statusBar.debuggingBackground": colorOrange,
+        "statusBar.debuggingForeground": colorBlack,
         "statusBar.foreground": colorGreyOnBlack,
         "statusBar.noFolderBackground": colorBlack,
         "tab.activeBackground": colorMainNegative,
         "tab.activeForeground": colorMain,
+        "tab.activeModifiedBorder": colorNone,
         "tab.border": colorNone,
         "tab.inactiveBackground": colorNone,
         "tab.inactiveForeground": colorGrey,
+        "tab.inactiveModifiedBorder": colorMainNegative,
         "terminal.ansiBlack": colorMainNegative,
         "terminal.ansiBlue": colorBlue,
         "terminal.ansiBrightBlack": colorMainNegative,
