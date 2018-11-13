@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.3 - 2018-11-14
+
+-   Add `storage.type.tsx`
+
+## 1.3.2 - 2018-11-13
+
+-   Set new colors for Code 1.29 and debug
+
 ## 1.3.1 - 2018-11-09
 
 -   Add Python directories to .vscodeignore

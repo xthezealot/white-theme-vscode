@@ -249,6 +249,7 @@ definitions = {
                 "storage.type.rust",
                 "storage.type.string.python",
                 "storage.type.ts",
+                "storage.type.tsx",
             ],
             "settings": {"fontStyle": "bold"},
         },
