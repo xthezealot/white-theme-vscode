@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.5 - 2018-11-14
+
+-   Add `storage.type.type`
+
 ## 1.3.4 - 2018-11-14
 
 -   Add `support.type.object.module`

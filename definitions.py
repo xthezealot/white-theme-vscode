@@ -250,6 +250,7 @@ definitions = {
                 "storage.type.string.python",
                 "storage.type.ts",
                 "storage.type.tsx",
+                "storage.type.type",
                 "support.type.object.module",
             ],
             "settings": {"fontStyle": "bold"},
