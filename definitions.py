@@ -227,6 +227,7 @@ definitions = {
                 "keyword.operator.misc",
                 "keyword.operator.new",
                 "keyword.operator.other",
+                "keyword.operator.ternary",
                 "keyword.other.fn",
                 "keyword.other.rust",
                 "keyword.other.special-method",

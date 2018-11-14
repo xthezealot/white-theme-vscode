@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.6 - 2018-11-14
+
+-   Add `keyword.operator.ternary`
+
 ## 1.3.5 - 2018-11-14
 
 -   Add `storage.type.type`
