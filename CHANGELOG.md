@@ -2,6 +2,10 @@
 
 ## 1.3.3 - 2018-11-14
 
+-   Add `support.type.object.module`
+
+## 1.3.3 - 2018-11-14
+
 -   Add `storage.type.tsx`
 
 ## 1.3.2 - 2018-11-13
