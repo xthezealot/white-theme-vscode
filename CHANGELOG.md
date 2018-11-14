@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.3.3 - 2018-11-14
+## 1.3.4 - 2018-11-14
 
 -   Add `support.type.object.module`
 
