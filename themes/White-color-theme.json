@@ -109,8 +109,8 @@
         "statusBar.debuggingForeground": "#000",
         "statusBar.foreground": "#65696e",
         "statusBar.noFolderBackground": "#000",
-        "tab.activeBackground": "#000",
-        "tab.activeForeground": "#fff",
+        "tab.activeForeground": "#eeea",
+        "tab.activeBackground": "#444f"
         "tab.activeModifiedBorder": "#0000",
         "tab.border": "#0000",
         "tab.inactiveBackground": "#0000",
